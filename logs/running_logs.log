@@ -1,0 +1,433 @@
+[2023-11-23 16:56:14,759: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-23 16:56:14,762: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-23 16:56:14,764: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-23 16:56:14,765: INFO: common: created directory at: artifacts]
+[2023-11-23 16:56:14,765: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-23 16:56:20,101: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 095E:1E544:740A7F:8069E0:655F36D5
+Accept-Ranges: bytes
+Date: Thu, 23 Nov 2023 11:26:15 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4746-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1700738775.223699,VS0,VE633
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 7f4a8d974ef4dda746d0a39f0568a97823b73a59
+Expires: Thu, 23 Nov 2023 11:31:15 GMT
+Source-Age: 0
+
+]
+[2023-11-23 16:56:20,260: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-11-23 16:56:20,261: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-11-23 16:56:20,263: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-23 16:56:20,264: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-23 16:56:20,265: INFO: common: created directory at: artifacts]
+[2023-11-23 16:56:20,265: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-23 16:56:20,267: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-11-23 16:56:20,267: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-23 16:56:20,269: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-23 16:56:20,271: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-23 16:56:20,271: INFO: common: created directory at: artifacts]
+[2023-11-23 16:56:20,272: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-23 16:56:32,342: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-11-23 16:56:32,343: INFO: main: *******************]
+[2023-11-23 16:56:32,343: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-11-23 16:56:32,349: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-23 16:56:32,352: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-23 16:56:32,353: INFO: common: created directory at: artifacts]
+[2023-11-23 16:56:32,354: INFO: common: created directory at: artifacts/model_trainer]
+[2023-11-23 17:30:06,986: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`]
+Traceback (most recent call last):
+  File "C:\Users\DELL\Downloads\Text-Summarization-NLP-Project-main\Text-Summarization-NLP-Project-main\main.py", line 63, in <module>
+    model_trainer.main()
+  File "C:\Users\DELL\Downloads\Text-Summarization-NLP-Project-main\Text-Summarization-NLP-Project-main\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "C:\Users\DELL\Downloads\Text-Summarization-NLP-Project-main\Text-Summarization-NLP-Project-main\src\textSummarizer\conponents\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 117, in __init__
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\training_args.py", line 1442, in __post_init__
+    and (self.device.type != "cuda")
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\training_args.py", line 1887, in device
+    return self._setup_devices
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\generic.py", line 54, in __get__
+    cached = self.fget(obj)
+  File "C:\Users\DELL\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\training_args.py", line 1787, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+[2023-11-23 17:35:14,100: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-23 17:35:14,105: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-23 17:35:14,108: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-23 17:35:14,108: INFO: common: created directory at: artifacts]
+[2023-11-23 17:35:14,109: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-23 17:35:14,110: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-11-23 17:35:14,275: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-11-23 17:35:14,276: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-11-23 17:35:14,281: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-23 17:35:14,283: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-23 17:35:14,283: INFO: common: created directory at: artifacts]
+[2023-11-23 17:35:14,284: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-23 17:35:14,286: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-11-23 17:35:14,286: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-23 17:35:14,292: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-23 17:35:14,294: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-23 17:35:14,294: INFO: common: created directory at: artifacts]
+[2023-11-23 17:35:14,295: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-23 17:35:34,981: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-11-23 17:35:34,982: INFO: main: *******************]
+[2023-11-23 17:35:34,983: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-11-23 17:35:34,997: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-23 17:35:35,004: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-23 17:35:35,006: INFO: common: created directory at: artifacts]
+[2023-11-23 17:35:35,008: INFO: common: created directory at: artifacts/model_trainer]
+[2023-11-23 17:39:12,867: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-23 17:39:12,870: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-23 17:39:12,874: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-23 17:39:12,874: INFO: common: created directory at: artifacts]
+[2023-11-23 17:39:12,875: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-23 17:39:12,875: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-11-23 17:39:13,019: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-11-23 17:39:13,019: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-11-23 17:39:13,023: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-23 17:39:13,025: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-23 17:39:13,026: INFO: common: created directory at: artifacts]
+[2023-11-23 17:39:13,026: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-23 17:39:13,028: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-11-23 17:39:13,028: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-23 17:39:13,032: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-23 17:39:13,034: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-23 17:39:13,034: INFO: common: created directory at: artifacts]
+[2023-11-23 17:39:13,035: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-23 17:39:15,232: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-11-23 17:39:15,234: INFO: main: *******************]
+[2023-11-23 17:39:15,235: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-11-23 17:39:15,237: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-23 17:39:15,239: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-23 17:39:15,239: INFO: common: created directory at: artifacts]
+[2023-11-23 17:39:15,240: INFO: common: created directory at: artifacts/model_trainer]
+[2023-11-23 18:57:38,157: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2023-11-23 18:57:38,185: INFO: main: *******************]
+[2023-11-23 18:57:38,186: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2023-11-23 18:57:38,217: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-23 18:57:38,225: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-23 18:57:38,227: INFO: common: created directory at: artifacts]
+[2023-11-23 18:57:38,228: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-11-23 19:02:25,176: INFO: rouge_scorer: Using default tokenizer.]
+[2023-11-23 19:02:25,390: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 00:59:15,210: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-24 00:59:15,241: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 00:59:15,264: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 00:59:15,266: INFO: common: created directory at: artifacts]
+[2023-11-24 00:59:15,267: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-24 00:59:15,269: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-11-24 00:59:15,720: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-11-24 00:59:15,720: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-11-24 00:59:15,730: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 00:59:15,734: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 00:59:15,735: INFO: common: created directory at: artifacts]
+[2023-11-24 00:59:15,738: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-24 00:59:15,743: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 00:59:15,744: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-24 00:59:15,756: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 00:59:15,761: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 00:59:15,762: INFO: common: created directory at: artifacts]
+[2023-11-24 00:59:15,763: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-24 00:59:20,125: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 00:59:20,126: INFO: main: *******************]
+[2023-11-24 00:59:20,126: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-11-24 00:59:20,135: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 00:59:20,141: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 00:59:20,142: INFO: common: created directory at: artifacts]
+[2023-11-24 00:59:20,144: INFO: common: created directory at: artifacts/model_trainer]
+[2023-11-24 01:00:08,189: INFO: server: Started server process [1996]]
+[2023-11-24 01:00:08,189: INFO: on: Waiting for application startup.]
+[2023-11-24 01:00:08,190: INFO: on: Application startup complete.]
+[2023-11-24 01:00:08,191: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2023-11-24 01:03:26,282: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-24 01:03:26,286: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 01:03:26,288: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 01:03:26,289: INFO: common: created directory at: artifacts]
+[2023-11-24 01:03:26,289: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-24 01:03:26,289: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-11-24 01:03:26,446: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-11-24 01:03:26,447: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-11-24 01:03:26,450: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 01:03:26,451: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 01:03:26,452: INFO: common: created directory at: artifacts]
+[2023-11-24 01:03:26,452: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-24 01:03:26,455: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 01:03:26,456: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-24 01:03:26,461: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 01:03:26,463: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 01:03:26,464: INFO: common: created directory at: artifacts]
+[2023-11-24 01:03:26,464: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-24 01:03:28,729: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 01:03:28,729: INFO: main: *******************]
+[2023-11-24 01:03:28,729: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-11-24 01:03:28,733: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 01:03:28,734: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 01:03:28,735: INFO: common: created directory at: artifacts]
+[2023-11-24 01:03:28,735: INFO: common: created directory at: artifacts/model_trainer]
+[2023-11-24 02:46:06,537: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2023-11-24 02:46:06,547: INFO: main: *******************]
+[2023-11-24 02:46:06,547: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2023-11-24 02:46:06,578: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 02:46:06,590: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 02:46:06,597: INFO: common: created directory at: artifacts]
+[2023-11-24 02:46:06,598: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-11-24 02:56:12,766: INFO: rouge_scorer: Using default tokenizer.]
+[2023-11-24 02:56:13,369: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 02:57:36,012: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-24 02:57:36,018: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 02:57:36,021: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 02:57:36,021: INFO: common: created directory at: artifacts]
+[2023-11-24 02:57:36,022: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-24 02:57:36,024: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-11-24 02:57:36,182: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-11-24 02:57:36,182: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-11-24 02:57:36,188: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 02:57:36,189: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 02:57:36,189: INFO: common: created directory at: artifacts]
+[2023-11-24 02:57:36,190: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-24 02:57:36,192: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 02:57:36,192: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-24 02:57:36,195: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 02:57:36,199: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 02:57:36,199: INFO: common: created directory at: artifacts]
+[2023-11-24 02:57:36,200: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-24 02:57:39,255: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 02:57:39,255: INFO: main: *******************]
+[2023-11-24 02:57:39,256: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-11-24 02:57:39,264: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 02:57:39,269: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 02:57:39,270: INFO: common: created directory at: artifacts]
+[2023-11-24 02:57:39,270: INFO: common: created directory at: artifacts/model_trainer]
+[2023-11-24 11:04:00,457: INFO: server: Started server process [22256]]
+[2023-11-24 11:04:00,458: INFO: on: Waiting for application startup.]
+[2023-11-24 11:04:00,459: INFO: on: Application startup complete.]
+[2023-11-24 11:04:00,460: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2023-11-24 11:05:42,670: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-24 11:05:42,675: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 11:05:42,679: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 11:05:42,680: INFO: common: created directory at: artifacts]
+[2023-11-24 11:05:42,680: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-24 11:05:42,681: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-11-24 11:05:42,899: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-11-24 11:05:42,900: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-11-24 11:05:42,908: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 11:05:42,910: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 11:05:42,911: INFO: common: created directory at: artifacts]
+[2023-11-24 11:05:42,912: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-24 11:05:42,915: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 11:05:42,916: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-24 11:05:42,923: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 11:05:42,925: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 11:05:42,926: INFO: common: created directory at: artifacts]
+[2023-11-24 11:05:42,927: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-24 11:05:45,759: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 11:05:45,760: INFO: main: *******************]
+[2023-11-24 11:05:45,761: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-11-24 11:05:45,765: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 11:05:45,768: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 11:05:45,769: INFO: common: created directory at: artifacts]
+[2023-11-24 11:05:45,769: INFO: common: created directory at: artifacts/model_trainer]
+[2023-11-24 12:14:04,537: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2023-11-24 12:14:04,549: INFO: main: *******************]
+[2023-11-24 12:14:04,549: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2023-11-24 12:14:04,579: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 12:14:04,595: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 12:14:04,599: INFO: common: created directory at: artifacts]
+[2023-11-24 12:14:04,601: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-11-24 12:21:14,726: INFO: rouge_scorer: Using default tokenizer.]
+[2023-11-24 12:21:14,937: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 13:52:14,418: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 13:52:14,446: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 13:52:14,453: INFO: common: created directory at: artifacts]
+[2023-11-24 13:52:14,456: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-11-24 13:54:47,015: INFO: server: Shutting down]
+[2023-11-24 13:54:47,125: INFO: on: Waiting for application shutdown.]
+[2023-11-24 13:54:47,128: INFO: on: Application shutdown complete.]
+[2023-11-24 13:54:47,129: INFO: server: Finished server process [22256]]
+[2023-11-24 13:55:06,350: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-24 13:55:06,353: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 13:55:06,354: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 13:55:06,355: INFO: common: created directory at: artifacts]
+[2023-11-24 13:55:06,355: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-24 13:55:06,355: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-11-24 13:55:06,509: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-11-24 13:55:06,509: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-11-24 13:55:06,516: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 13:55:06,517: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 13:55:06,518: INFO: common: created directory at: artifacts]
+[2023-11-24 13:55:06,518: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-24 13:55:06,521: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 13:55:06,521: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-24 13:55:06,524: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 13:55:06,525: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 13:55:06,526: INFO: common: created directory at: artifacts]
+[2023-11-24 13:55:06,528: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-24 13:55:19,693: INFO: server: Started server process [14800]]
+[2023-11-24 13:55:19,694: INFO: on: Waiting for application startup.]
+[2023-11-24 13:55:19,694: INFO: on: Application startup complete.]
+[2023-11-24 13:55:19,695: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2023-11-24 13:55:50,549: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-24 13:55:50,552: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 13:55:50,554: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 13:55:50,554: INFO: common: created directory at: artifacts]
+[2023-11-24 13:55:50,554: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-24 13:55:50,554: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-11-24 13:55:50,715: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-11-24 13:55:50,715: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-11-24 13:55:50,718: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 13:55:50,720: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 13:55:50,721: INFO: common: created directory at: artifacts]
+[2023-11-24 13:55:50,722: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-24 13:55:50,723: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 13:55:50,724: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-24 13:55:50,727: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 13:55:50,729: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 13:55:50,729: INFO: common: created directory at: artifacts]
+[2023-11-24 13:55:50,729: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-24 13:55:52,774: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-11-24 13:55:52,774: INFO: main: *******************]
+[2023-11-24 13:55:52,774: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-11-24 13:55:52,781: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-24 13:55:52,783: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-24 13:55:52,783: INFO: common: created directory at: artifacts]
+[2023-11-24 13:55:52,784: INFO: common: created directory at: artifacts/model_trainer]
+[2023-11-25 01:24:51,961: INFO: server: Started server process [5684]]
+[2023-11-25 01:24:51,963: INFO: on: Waiting for application startup.]
+[2023-11-25 01:24:51,963: INFO: on: Application startup complete.]
+[2023-11-25 01:24:51,964: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2023-11-25 01:25:50,917: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-25 01:25:50,933: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-25 01:25:50,948: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-25 01:25:50,949: INFO: common: created directory at: artifacts]
+[2023-11-25 01:25:50,949: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-25 01:25:50,949: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-11-25 01:25:51,183: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-11-25 01:25:51,186: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-11-25 01:25:51,193: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-25 01:25:51,197: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-25 01:25:51,198: INFO: common: created directory at: artifacts]
+[2023-11-25 01:25:51,199: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-25 01:25:51,201: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-11-25 01:25:51,201: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-25 01:25:51,205: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-25 01:25:51,207: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-25 01:25:51,207: INFO: common: created directory at: artifacts]
+[2023-11-25 01:25:51,209: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-25 01:25:54,044: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-11-25 01:25:54,044: INFO: main: *******************]
+[2023-11-25 01:25:54,044: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-11-25 01:25:54,049: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-25 01:25:54,051: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-25 01:25:54,051: INFO: common: created directory at: artifacts]
+[2023-11-25 01:25:54,053: INFO: common: created directory at: artifacts/model_trainer]
+[2023-11-26 15:51:14,244: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2023-11-26 15:51:14,263: INFO: main: *******************]
+[2023-11-26 15:51:14,264: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2023-11-26 15:51:14,330: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-26 15:51:14,358: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-26 15:51:14,362: INFO: common: created directory at: artifacts]
+[2023-11-26 15:51:14,364: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-11-26 15:56:57,087: INFO: rouge_scorer: Using default tokenizer.]
+[2023-11-26 15:56:57,673: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2023-11-26 16:03:36,716: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-26 16:03:36,733: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-26 16:03:36,739: INFO: common: created directory at: artifacts]
+[2023-11-26 16:03:36,742: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-11-26 16:05:50,518: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-26 16:05:50,521: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-26 16:05:50,521: INFO: common: created directory at: artifacts]
+[2023-11-26 16:05:50,522: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-11-26 17:14:38,954: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-26 17:14:38,964: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-26 17:14:38,966: INFO: common: created directory at: artifacts]
+[2023-11-26 17:14:38,966: INFO: common: created directory at: artifacts/model_evaluation]
